@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #fbf9f9;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    height: 100% !important;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gap {
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: .5px solid gray;
+    width: 20%;
+    line-break: auto;
+}
+
+.btn {
+    border: 0px;
+    border-radius: 5px;
+    font-size: 12pt;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+.btn-primary {
+    background-color: #3470ff;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #35c700;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.paths {
+    display: flex;
+    gap: 10px;
+    color: #8f8f8f;
+}
+
+.paths span:nth-last-child(1) {
+    font-style: italic;
+}
+
+.auth-title {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 20pt;
+}
+
+.error {
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+form>input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 850px) {
+    .card {
+        width: 100%;
+    }
+}
