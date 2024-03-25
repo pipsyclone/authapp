@@ -95,13 +95,57 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 30px;
+    gap: 20px;
     margin-top: 30px;
 }
 
 form>input {
     padding: 10px;
     border-radius: 5px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+}
+
+.divider::before,
+.divider::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: grey;
+    margin: 5px;
+}
+
+.btn-google {
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-google:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.btn-github {
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    color: #303030;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-github:hover {
+    background-color: #303030;
+    color: #fff;
 }
 
 @media screen and (max-width: 850px) {
